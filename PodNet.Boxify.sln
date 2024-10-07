@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".root", ".root", "{C7EFD896-305C-4D3E-81B5-0F5821B71660}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.github\workflows\cd-nuget.yml = .github\workflows\cd-nuget.yml
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		.github\FUNDING.yml = .github\FUNDING.yml
+		global.json = global.json
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{74459E2D-15DE-49BA-8EC1-AB8C4AC4B799}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PodNet.Boxify", "src\Boxify\PodNet.Boxify.csproj", "{A3FED665-55B1-4157-BECF-56CAA634FA61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{36ADBDA5-6EA8-435A-87BC-F084D7D0B5A2}"
+	ProjectSection(SolutionItems) = preProject
+		images\CccTerminalRgbColorizerDemo.png = images\CccTerminalRgbColorizerDemo.png
+		images\LegacyTerminalColorizerDemo.png = images\LegacyTerminalColorizerDemo.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3FED665-55B1-4157-BECF-56CAA634FA61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3FED665-55B1-4157-BECF-56CAA634FA61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3FED665-55B1-4157-BECF-56CAA634FA61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3FED665-55B1-4157-BECF-56CAA634FA61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3FED665-55B1-4157-BECF-56CAA634FA61} = {74459E2D-15DE-49BA-8EC1-AB8C4AC4B799}
+		{36ADBDA5-6EA8-435A-87BC-F084D7D0B5A2} = {C7EFD896-305C-4D3E-81B5-0F5821B71660}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {099F2425-924C-4626-91B8-3025DE1D4B3D}
+	EndGlobalSection
+EndGlobal

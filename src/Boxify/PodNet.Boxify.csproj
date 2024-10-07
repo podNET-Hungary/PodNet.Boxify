@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Description>Convert your image to Unicode box-drawings using semigraphics. Write your graphics into strings, text files or even terminals with optional colorization!</Description>
+		<PackageTags>box, block, art, unicode, ascii, graphics, art, terminal, console, PodNet, awesome</PackageTags>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="PodNet.NuGet.Core" PrivateAssets="all" />
+		<PackageReference Include="PolySharp" PrivateAssets="all" />
+	</ItemGroup>
+</Project>
