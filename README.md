@@ -4,18 +4,20 @@ Convert your image to Unicode box-drawings using semigraphics. Write your graphi
 ## Usage
 
 1. Install the package to your project:
-	```cmd
-	dotnet add package PodNet.Boxify
-	```
+    ```cmd
+    dotnet add package PodNet.Boxify
+    ```
+3. Then, either:
 
-2. Then, either:
+    a. define your own `IBoxBitmapSource`, OR
+   
+    b. use one of the extension packages:
 
-   	i. define your own `IBoxBitmapSource`, OR
-    ii. use one of the extension packages:
-	    ```cmd
-	    dotnet add package PodNet.Boxify.Bitmap
-	    dotnet add package PodNet.Boxify.Svg
-		```
+    ```cmd
+    dotnet add package PodNet.Boxify.Bitmap
+    dotnet add package PodNet.Boxify.Svg
+    ```
+
 > [!NOTE]
 > You can skip installing the core package if you decide to use one of the extensions, because it transitively references the core package. Do note however, that the extension packages take a dependency on `System.Drawing`, with the `PodNet.Boxify.Svg` package ambiently taking a dependency on `System.Drawing` through the [`Svg`](https://github.com/svg-net/SVG) package. 
 > If you supply your own `IBoxBitmapSource` (which is a simple wrapper around "how to get a pixel from and image"), you can simply define your own logic and minimize additional dependencies. The core package has no dependencies besides .NET Standard 2.0 APIs.
